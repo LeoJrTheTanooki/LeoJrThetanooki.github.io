@@ -1,0 +1,76 @@
+body {
+  background-image: url(../Assets/YourNameGrid.png);
+}
+
+p {
+  outline: 10px ridge;
+  outline-color: white;
+  padding: 12px;
+  border-radius: 0.1rem;
+  color: white;
+  background-color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: block;
+  width: fit-content;
+  font-size: x-large;
+  /* max-width: 30em; */
+}
+
+a:link {
+  color: aqua;
+}
+a:visited {
+  color: hotpink;
+}
+a:hover {
+  color: gold;
+}
+
+.yourNameImg {
+  image-rendering: pixelated;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0px 20px;
+}
+
+.yourNameAnswer {
+  display: inline-block;
+  vertical-align: middle;
+  /* padding-right: 20vw; */
+  /* padding-right: max(100px, min(200px, 200px)); */
+  width: 8em;
+}
+.yourNameQuestion {
+  display: inline-block;
+  vertical-align: middle;
+  /* padding-right: 20vw; */
+  /* padding-right: max(100px, min(200px, 200px)); */
+  width: 15em;
+}
+
+#wrapper {
+  width: fit-content;
+  /* width: auto; */
+  /* border: 3px solid; */
+  margin: auto;
+}
+
+.mint1 {
+  outline: 12px solid;
+  outline-color: lightgoldenrodyellow;
+  border-radius: 0.1rem;
+}
+
+.mint2 {
+  outline: 8px solid;
+  outline-color: aquamarine;
+  border-radius: 0.1rem;
+  padding: 12px;
+  border-radius: 0.1rem;
+  color: white;
+  background-color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: block;
+  width: fit-content;
+  font-size: x-large;
+}

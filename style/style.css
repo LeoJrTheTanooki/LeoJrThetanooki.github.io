@@ -1,0 +1,84 @@
+body {
+  background-image: url(../Assets/YourNameGrid.png);
+}
+
+m1 {
+  outline: 5px solid white;
+  padding: 5px;
+  border-radius: 0.1rem;
+  color: white;
+  background-color: black;
+  font-family: "Courier New", Courier, monospace;
+  display: block;
+  width: fit-content;
+  max-width: 20em;
+}
+m2 {
+  outline: 10px ridge;
+  outline-color: white;
+  padding: 12px;
+  border-radius: 0.1rem;
+  color: white;
+  background-color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: block;
+  width: fit-content;
+  font-size: x-large;
+  /* max-width: 30em; */
+}
+m3 {
+  outline: 5px solid white;
+  padding: 5px;
+  border-radius: 0.1rem;
+  background-color: wheat;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: block;
+  width: fit-content;
+  max-width: 20em;
+}
+test {
+  outline: 5px solid white;
+  padding: 5px;
+  border-radius: 0.1rem;
+  color: white;
+  background-color: black;
+  font-family: "Courier New", Courier, monospace;
+  display: block;
+  width: fit-content;
+  max-width: 20em;
+}
+
+a:link {
+  color: aqua;
+}
+a:visited {
+  color: hotpink;
+}
+a:hover {
+  transition: color 0.5ms;
+  color: gold;
+}
+
+.pixelated {
+  image-rendering: pixelated;
+}
+.crisp-edges {
+  image-rendering: crisp-edges;
+}
+
+.column {
+  float: left;
+  /* border: 1px solid; */
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column_container {
+    /* vertical-align: center; */
+    /* margin: 0 auto; */
+    width: fit-content;
+    margin: auto;
+
+}

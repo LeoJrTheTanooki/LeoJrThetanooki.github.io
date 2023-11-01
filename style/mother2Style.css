@@ -1,5 +1,10 @@
 body {
-  background-image: url(../Assets/YourNameGrid.png);
+  background-color: darkturquoise;
+  background-image: url(../Assets/NewYourNameGrid.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  image-rendering: pixelated;
 }
 
 p {
@@ -50,8 +55,6 @@ a:hover {
 
 #wrapper {
   width: fit-content;
-  /* width: auto; */
-  /* border: 3px solid; */
   margin: auto;
 }
 
@@ -73,4 +76,17 @@ a:hover {
   display: block;
   width: fit-content;
   font-size: x-large;
+}
+
+.column {
+  float: left;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column_container {
+  width: fit-content;
+  margin: auto;
 }

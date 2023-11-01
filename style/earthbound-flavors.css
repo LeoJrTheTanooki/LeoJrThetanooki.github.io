@@ -1,15 +1,9 @@
-body {
-  background-color: #92deff;
-  background-image: url(../Assets/NewYourNameGrid.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  image-rendering: pixelated;
-}
-
-.button {
-  margin-top: 0.053em;
-  margin-right: 0.053em;
+@font-face {
+  font-family: AppleKid;
+  src: url("../Assets/woff/Apple-Kid.woff2") format("woff2"),
+    url("../Assets/woff/Apple-Kid.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 a:link {
@@ -21,34 +15,6 @@ a:visited {
 a:hover {
   transition: color 0.5ms;
   color: gold;
-}
-
-.pixelated {
-  image-rendering: pixelated;
-}
-.crisp-edges {
-  image-rendering: crisp-edges;
-}
-
-.column {
-  float: left;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.column_container {
-  width: fit-content;
-  margin: auto;
-}
-
-@font-face {
-  font-family: AppleKid;
-  src: url("../Assets/woff/Apple-Kid.woff2") format("woff2"),
-    url("../Assets/woff/Apple-Kid.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
 }
 
 .flav-wrap {

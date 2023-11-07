@@ -8,19 +8,43 @@ body {
 }
 
 .button {
-  margin-top: 0.053em;
-  margin-right: 0.053em;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 a:link {
   color: aqua;
 }
+
+
 a:visited {
   color: hotpink;
+  
 }
 a:hover {
   transition: color 0.5ms;
   color: gold;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+.button-link{
+  outline: aqua solid 2px;
+}
+
+.button-link:hover{
+  outline: gold solid 3px;
+}
+
+.button-link:hover{
+  outline: gold solid 3px;
+}
+
+.button-link:hover{
+  outline: gold solid 3px;
 }
 
 .pixelated {
@@ -42,6 +66,47 @@ a:hover {
   width: fit-content;
   margin: auto;
 }
+
+.button-container {
+  position: relative;
+}
+.button-lock {
+  position: absolute;
+  height: auto;
+  left: 5px;
+  top: -16px;
+  right: 5px;
+}
+
+
+/* EarthBound font and border stuff */
+
+/* <div class="flav-wrap">
+<div class="plain1">
+  <div class="plain2">
+    <div class="plain3">
+      <div class="plain4">
+        <div class="plain5">
+          &#8226;
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div> */
+
+/* <div class="flav-wrap">
+<div class="mint1">
+  <div class="mint2">
+    <div class="mint3">
+      <div class="mint4">
+          &#8226;
+      </div>
+    </div>
+  </div>
+</div>
+</div> */
+
 
 @font-face {
   font-family: AppleKid;
@@ -121,7 +186,7 @@ a:hover {
 
   .mint4,
   .straw4,
-  .bana4,
+  .nana4,
   .nut4 {
     padding-bottom: 0.106em;
     padding-top: 0.053em;
@@ -150,7 +215,7 @@ a:hover {
     background-color: #42214a;
   }
 
-  .bana1 {
+  .nana1 {
     outline: 0.318em solid;
     outline-color: #4a3152;
     outline: 0.212em solid;
@@ -158,13 +223,13 @@ a:hover {
     border-radius: 0.1rem;
   }
 
-  .bana2 {
+  .nana2 {
     outline: 0.265em solid;
     border-radius: 0.1rem;
     outline-color: #ffffd6;
   }
 
-  .bana3 {
+  .nana3 {
     outline: 0.318em solid;
     outline-color: #4a3152;
     border-radius: 0.1rem;
@@ -275,7 +340,7 @@ a:hover {
 
   .mint4,
   .straw4,
-  .bana4,
+  .nana4,
   .nut4 {
     padding-bottom: 0.106em;
     padding-top: 0.053em;
@@ -304,19 +369,19 @@ a:hover {
     background-color: #42214a;
   }
 
-  .bana1 {
+  .nana1 {
     outline: 0.318em solid;
     border-radius: 0.1rem;
     outline-color: #4a3152;
   }
 
-  .bana2 {
+  .nana2 {
     outline: 0.265em solid;
     border-radius: 0.1rem;
     outline-color: #ffffd6;
   }
 
-  .bana3 {
+  .nana3 {
     outline: 0.212em solid;
     border-radius: 0.1rem;
     padding: 0.265em;

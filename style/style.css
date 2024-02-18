@@ -7,44 +7,29 @@ body {
   image-rendering: pixelated;
 }
 
-.button {
-  margin-top: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
+a.button{
+  outline: aqua solid 2px;
+  height: fit-content;
+}
+
+a.button:hover, a.button:visited:hover{
+  outline: gold solid 3px;
+}
+
+a.button:visited{
+  outline: hotpink solid 3px;
 }
 
 a:link {
   color: aqua;
 }
 
-
 a:visited {
   color: hotpink;
-  
 }
 a:hover {
   transition: color 0.5ms;
   color: gold;
-}
-
-a.button {
-  text-decoration: none;
-}
-
-.button-link{
-  outline: aqua solid 2px;
-}
-
-.button-link:hover{
-  outline: gold solid 3px;
-}
-
-.button-link:hover{
-  outline: gold solid 3px;
-}
-
-.button-link:hover{
-  outline: gold solid 3px;
 }
 
 .pixelated {
@@ -70,6 +55,7 @@ a.button {
 .button-container {
   position: relative;
 }
+
 .button-lock {
   position: absolute;
   height: auto;
@@ -77,6 +63,10 @@ a.button {
   top: 5px;
 }
 
+.d-flex{
+  max-width: 80vw;
+  align-items: center;
+}
 
 /* EarthBound font and border stuff */
 
@@ -105,7 +95,6 @@ a.button {
   </div>
 </div>
 </div> */
-
 
 @font-face {
   font-family: AppleKid;

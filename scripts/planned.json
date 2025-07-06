@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Bit",
+    "spriteSheet": "/assets/",
+    "link": "https://store.steampowered.com/app/1929290/Bits__Bops"
+  },
+  {
+    "name": "Bop",
+    "spriteSheet": "/assets/",
+    "link": "https://tempolabgames.itch.io/bits-and-bops"
+  },
+  {
+    "name": "Sanyati",
+    "spriteSheet": "/assets/",
+    "link": "https://store.steampowered.com/app/1178030/Star_Fetchers"
+  },
+  {
+    "name": "Zambezi",
+    "spriteSheet": "/assets/",
+    "link": "https://store.steampowered.com/app/1178030/Star_Fetchers"
+  },
+  {
+    "name": "Moony",
+    "spriteSheet": "A dolphin dressed like Phoenix Wright",
+    "link": "https://www.youtube.com/@moon-channel"
+  },
+  {
+    "name": "MegtonGirl",
+    "spriteSheet": "/assets/",
+    "link": "https://www.youtube.com/playlist?list=PLg7-OgP-q3-0JsL1aQZy-BZe_LTemDpWT"
+  },
+  {
+    "name": "Gum",
+    "spriteSheet": "/assets/",
+    "link": "https://tokyo-to.neocities.org/tokyo"
+  },
+  {
+    "name": "SkyBlew",
+    "spriteSheet": "/assets/",
+    "link": "https://linktr.ee/skyblew"
+  },
+  {
+    "name": "Vibri"
+  },
+  {
+    "name": "Luffy"
+  },
+  {
+    "name": "Phantom R"
+  },
+  {
+    "name": "Robablo",
+    "link": "https://linktr.ee/robablo_blanferds"
+  },
+  {
+    "name": "Vinnie"
+  },
+  {
+    "name": "Skipp"
+  },
+  {
+    "name": "Stone"
+  }
+]

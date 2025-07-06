@@ -770,22 +770,6 @@
                   </div>
                 </div>
               </footer>
-              
-              <script>
-                function audio() {
-                  if (document.getElementById("music").currentTime >= 81) {
-                    document.getElementById("music").currentTime = 41.2;
-                  }
-                }
-                $.featherlight.prototype.afterContent = function () {
-                  let caption = this.$currentTarget.find("img").attr("title");
-                  this.$instance.find("caption").remove();
-                  $('<div class="caption">')
-                    .text(caption)
-                    .appendTo(this.$instance.find(".featherlight-content"));
-                };
-                // Special thanks to Zenith for telling me about Featherlight and Gav's Blog for additional Featherlight assistance: https://www.gavsblog.com/blog/how-to-create-a-lightbox-using-jquery-and-featherlight
-              </script>
             </div>
           </div>
 
@@ -806,17 +790,6 @@
           >
             <div class="bg-lime-400 w-3 h-3 rounded-full"></div>
             <span class="cursor-default">POWER</span>
-          </div>
-
-          <div
-            class="flex w-full justify-center gap-2 font-semibold items-center mb-auto"
-          >
-            <button
-              class="bg-slate-200 text-slate-400 hover:bg-slate-400 hover:text-slate-500 p-1 text-end -rotate-12 mx-2 rounded-lg border-b-4 border-black hover:mt-[4px] hover:border-0"
-              id="musicBtn"
-            >
-              Mute
-            </button>
           </div>
 
           <div class="flex gap-2 text-3xl">
@@ -848,42 +821,27 @@
       </div>
     </div>
     <script type="module" src="/scripts/footer.js"></script>
-              <script src="//code.jquery.com/jquery-latest.js"></script>
-              <script
-                src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js"
-                type="text/javascript"
-                charset="utf-8"
-              ></script>
-    
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script
+      src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+
     <script>
-      let musicBtn = document.getElementById("musicBtn");
-      let musicMute = false;
-
-      const muteFunc = () => {
-        let iframeElem = document.getElementById("iframeElemId");
-        let innerDoc =
-          iframeElem.contentDocument || iframeElem.contentWindow.document;
-        let mediaSource = innerDoc.getElementById("music");
-        if (musicMute == true) {
-          mediaSource.muted = true;
-        } else {
-          mediaSource.muted = false;
+      function audio() {
+        if (document.getElementById("music").currentTime >= 81) {
+          document.getElementById("music").currentTime = 41.2;
         }
+      }
+      $.featherlight.prototype.afterContent = function () {
+        let caption = this.$currentTarget.find("img").attr("title");
+        this.$instance.find("caption").remove();
+        $('<div class="caption">')
+          .text(caption)
+          .appendTo(this.$instance.find(".featherlight-content"));
       };
-
-      musicBtn.addEventListener("click", (e) => {
-        if (musicMute == false) {
-          musicMute = true;
-          musicBtn.className =
-            "bg-slate-200 text-slate-400 hover:bg-slate-400 hover:text-slate-500 p-1 text-end -rotate-12 mx-2 rounded-lg border-b-2 border-black hover:mt-[4px] hover:border-0";
-        } else {
-          musicMute = false;
-          musicBtn.className =
-            "bg-slate-200 text-slate-400 hover:bg-slate-400 hover:text-slate-500 p-1 text-end -rotate-12 mx-2 rounded-lg border-b-4 border-black hover:mt-[4px] hover:border-0";
-        }
-
-        muteFunc();
-      });
+      // Special thanks to Zenith for telling me about Featherlight and Gav's Blog for additional Featherlight assistance: https://www.gavsblog.com/blog/how-to-create-a-lightbox-using-jquery-and-featherlight
     </script>
   </body>
 </html>

@@ -136,8 +136,8 @@
           class="flex flex-col border-[16px] border-neutral-800 rounded-3xl relative w-full h-full bg-white overflow-auto"
         >
           <div class="w-full h-full overflow-y-auto font-normal text-black">
-            <div class="flex flex-col relative bg-teal-300 h-screen">
-              <div class="border-2 border-black m-4">
+            <div class="flex flex-col relative h-screen line-bg">
+              <div class="border-2 border-black m-4 bg-teal-300">
                 <section class="motherish blog" id="blog063025">
                   <h1 class="text-3xl text-center font-bold">Welcome!</h1>
                   <div class="m-2 text-lg">
@@ -497,35 +497,5 @@
       </div>
     </div>
     <script type="module" src="/scripts/footer.js"></script>
-    <script>
-      let musicBtn = document.getElementById("musicBtn");
-      let musicMute = false;
-
-      const muteFunc = () => {
-        let iframeElem = document.getElementById("iframeElemId");
-        let innerDoc =
-          iframeElem.contentDocument || iframeElem.contentWindow.document;
-        let mediaSource = innerDoc.getElementById("music");
-        if (musicMute == true) {
-          mediaSource.muted = true;
-        } else {
-          mediaSource.muted = false;
-        }
-      };
-
-      musicBtn.addEventListener("click", (e) => {
-        if (musicMute == false) {
-          musicMute = true;
-          musicBtn.className =
-            "bg-slate-200 text-slate-400 hover:bg-slate-400 hover:text-slate-500 p-1 text-end -rotate-12 mx-2 rounded-lg border-b-2 border-black hover:mt-[4px] hover:border-0";
-        } else {
-          musicMute = false;
-          musicBtn.className =
-            "bg-slate-200 text-slate-400 hover:bg-slate-400 hover:text-slate-500 p-1 text-end -rotate-12 mx-2 rounded-lg border-b-4 border-black hover:mt-[4px] hover:border-0";
-        }
-
-        muteFunc();
-      });
-    </script>
   </body>
 </html>

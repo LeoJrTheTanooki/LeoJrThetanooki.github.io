@@ -9,279 +9,509 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/style/style-v0.6.css" />
   </head>
-  <body
-    class="flex flex-col justify-center text-center bg-black text-white apple-kid text-[32px] leading-6"
-  >
-    <audio
-      autoplay
-      id="music"
-      controls
-      src="https://starmen.net/mother3/music/Mother%203%20-%20248%20Curtain%20Call.ogg"
-    ></audio>
-    <div class="h-screen"></div>
-    <h1>FRIENDS</h1>
-    <div class="roster-category">
-      <div class="roster-subcategory">
-        <div class="w-fit text-center flex flex-col">
-          <img
-            class="w-[64px] self-center"
-            src="/assets/walk/atapi-walk.gif"
-            alt="Sprite of Atapi walking"
-          />
-          Atapi
+  <body class="flex h-screen grid-bg">
+    <div
+      class="flex flex-col bg-indigo-500 text-indigo-800 font-semibold console-depth rounded-[3rem] w-full min-w-[56rem] h-[90vh] m-5"
+    >
+      <nav class="flex justify-between rounded-t-full">
+        <div
+          class="bg-slate-200 w-32 rounded-tl-full rounded-br-full h-9"
+        ></div>
+        <div class="p-3">
+          <p class="font-bold text-center outline px-2 rounded-full w-fit">
+            Leo's Blog
+          </p>
         </div>
-        <div class="w-fit text-center flex flex-col">
-          <img
-            class="w-[64px] self-center"
-            src="/assets/walk/zenith-walk.gif"
-            alt="Sprite of Zenith walking"
-          />
-          Zenith
+        <div
+          class="bg-slate-200 w-32 rounded-tr-full rounded-bl-full h-9"
+        ></div>
+      </nav>
+
+      <div class="flex justify-between h-full overflow-y-auto">
+        <aside class="flex flex-col min-w-32">
+          <div
+            class="flex flex-col gap-2 mt-2 text-black font-normal"
+            id="tabs"
+          >
+            <a
+              class="bg-cyan-500 hover:bg-cyan-300 text-end rotate-12 mx-2 rounded-lg border-b-4 border-black hover:mt-[4px] hover:border-0"
+              href="/index.html"
+            >
+              Home
+            </a>
+            <a
+              class="bg-cyan-500 hover:bg-cyan-300 text-end rotate-12 mx-2 rounded-lg border-b-4 border-black hover:mt-[4px] hover:border-0"
+              href="/pages/contact.html"
+            >
+              Contact
+            </a>
+            <a
+              class="bg-cyan-500 hover:bg-cyan-300 text-end rotate-12 mx-2 rounded-lg border-b-4 border-black hover:mt-[4px] hover:border-0"
+              href="/pages/graphicbazaar.html"
+            >
+              Graphics
+            </a>
+            <a
+              class="bg-cyan-500 hover:bg-cyan-300 text-end rotate-12 mx-2 rounded-lg border-b-4 border-black hover:mt-[4px] hover:border-0"
+              href="/pages/art.html"
+            >
+              Art
+            </a>
+            <a
+              class="bg-slate-400 text-end cursor-not-allowed rotate-12 mx-2 rounded-lg mt-[4px]"
+              href="#"
+            >
+              Commissions
+            </a>
+            <a
+              class="bg-cyan-500 hover:bg-cyan-300 text-end rotate-12 mx-2 rounded-lg border-b-4 border-black hover:mt-[4px] hover:border-0"
+              href="/pages/interests.html"
+            >
+              Interests
+            </a>
+            <a
+              class="bg-cyan-500 hover:bg-cyan-300 text-end rotate-12 mx-2 rounded-lg border-b-4 border-black hover:mt-[4px] hover:border-0"
+              href="/pages/roster.html"
+            >
+              Roster
+            </a>
+          </div>
+
+          <div class="mt-auto flex justify-center">
+            <div
+              class="grid grid-cols-3 text-slate-400 text-2xl cursor-default"
+            >
+              <div class="flex justify-center items-center w-8 h-8"></div>
+              <div
+                class="flex justify-center items-center w-8 h-8 bg-slate-200 button-depth-up"
+              >
+                🞁
+              </div>
+              <div class="flex justify-center items-center w-8 h-8"></div>
+              <div
+                class="flex justify-center items-center w-8 h-8 bg-slate-200 button-depth"
+              >
+                🞀
+              </div>
+              <div
+                class="flex justify-center items-center w-8 h-8 bg-slate-200"
+              >
+                ●
+              </div>
+              <div
+                class="flex justify-center items-center w-8 h-8 bg-slate-200 button-depth-right"
+              >
+                🞂
+              </div>
+              <div class="flex justify-center items-center w-8 h-8"></div>
+              <div
+                class="flex justify-center items-center w-8 h-8 bg-slate-200 button-depth"
+              >
+                🞃
+              </div>
+              <div class="flex justify-center items-center w-8 h-8"></div>
+            </div>
+          </div>
+          <div
+            class="font-semibold mt-6 flex flex-col gap-3 items-end mr-2 cursor-default pb-4"
+          >
+            <div
+              class="flex justify-between pl-1 items-center bg-indigo-600 rounded-xl w-20 rotate-12"
+            >
+              START
+              <div
+                class="bg-slate-200 w-4 h-4 rounded-full start-depth ml-1 lg:mb-1"
+              ></div>
+            </div>
+            <div
+              class="flex justify-between pl-1 items-center bg-indigo-600 rounded-xl w-20 rotate-12"
+            >
+              SELECT
+              <div
+                class="bg-slate-200 w-4 h-4 rounded-full start-depth ml-1 lg:mb-1"
+              ></div>
+            </div>
+          </div>
+        </aside>
+        <div
+          class="flex flex-col border-[16px] border-neutral-800 rounded-3xl relative w-full h-full bg-white overflow-auto"
+        >
+          <div class="w-full h-full overflow-y-auto font-normal text-black">
+            <div
+              class="flex flex-col justify-center text-center bg-black text-white apple-kid text-[32px] leading-6"
+            >
+              <audio
+                id="music"
+                controls
+                src="https://starmen.net/mother3/music/Mother%203%20-%20248%20Curtain%20Call.ogg"
+              ></audio>
+              <div class="h-screen"></div>
+              <h1>FRIENDS</h1>
+              <div class="roster-category">
+                <div class="roster-subcategory">
+                  <div class="w-fit text-center flex flex-col">
+                    <img
+                      class="w-[64px] self-center"
+                      src="/assets/walk/atapi-walk.gif"
+                      alt="Sprite of Atapi walking"
+                    />
+                    Atapi
+                  </div>
+                  <div class="w-fit text-center flex flex-col">
+                    <img
+                      class="w-[64px] self-center"
+                      src="/assets/walk/zenith-walk.gif"
+                      alt="Sprite of Zenith walking"
+                    />
+                    Zenith
+                  </div>
+                  <div class="w-fit text-center flex flex-col">
+                    <img
+                      class="w-[64px] self-center cursor-pointer"
+                      src="/assets/walk/ashie-walk2.gif"
+                      alt="Sprite of Ashie walking"
+                      id="ashie"
+                    />
+                    Ashie
+                  </div>
+                </div>
+                <div class="roster-subcategory">
+                  <div class="w-fit text-center flex flex-col">
+                    <img
+                      class="w-[64px] self-center cursor-pointer"
+                      src="/assets/walk/nugget-walk1.gif"
+                      alt="Sprite of Nugget walking"
+                      id="nugget"
+                    />
+                    Nugget
+                  </div>
+                  <div class="w-fit text-center flex flex-col">
+                    <img
+                      class="w-[64px] self-center"
+                      src="/assets/walk/lasseter-walk.gif"
+                      alt="Sprite of Lasseter walking"
+                    />
+                    Lasseter
+                  </div>
+                </div>
+              </div>
+              <h1>ARTISTS</h1>
+              <div class="roster-category">
+                <div class="roster-subcategory">
+                  <div class="w-fit text-center flex flex-col">
+                    <img
+                      class="w-[64px] self-center cursor-pointer"
+                      src="/assets/walk/jetainga-walk2.gif"
+                      alt="Sprite of Jetainga walking"
+                      id="jetainga"
+                    />
+                    Jetainga
+                  </div>
+                </div>
+                <div class="roster-subcategory">Kevin Fagaragan</div>
+              </div>
+              <h1>STREAMERS</h1>
+              <div class="roster-category">
+                <div class="w-fit text-center flex flex-col">
+                  <img
+                    class="w-[64px] self-center"
+                    src="/assets/walk/oprazebb-walk.gif"
+                    alt="Sprite of Opra Zebb walking"
+                  />Opra Zebb
+                </div>
+              </div>
+              <h1>GAMES</h1>
+              <div class="roster-category">
+                <div class="roster-subcategory">
+                  <div class="w-fit text-center flex flex-col">
+                    <img
+                      class="w-[64px] self-center"
+                      src="/assets/walk/poppin-walk.gif"
+                      alt="Sprite of Poppin walking"
+                    />
+                    Poppin
+                  </div>
+                  <div class="w-fit text-center flex flex-col">
+                    <img
+                      class="w-[64px] self-center"
+                      src="/assets/walk/jupa-walk.gif"
+                      alt="Sprite of Jupa walking"
+                    />
+                    Jupa
+                  </div>
+                </div>
+                <div class="roster-subcategory">
+                  <div class="w-fit text-center flex flex-col cursor-pointer">
+                    <img
+                      class="w-[64px] self-center"
+                      src="/assets/walk/pablo-walk2.gif"
+                      alt="Sprite of Pablo walking"
+                      id="pablo"
+                    />
+                    Pablo
+                  </div>
+                  <div class="w-fit text-center flex flex-col">
+                    <img
+                      class="w-[64px] self-center"
+                      src="/assets/walk/luna-walk.gif"
+                      alt="Sprite of Luna walking"
+                    />
+                    Luna
+                  </div>
+                </div>
+                <div class="w-fit text-center flex flex-col">
+                  <img
+                    class="w-[64px] self-center"
+                    src="/assets/walk/kinoko-walk.gif"
+                    alt="Sprite of Kinoko walking"
+                  />
+                  Kinoko
+                </div>
+                <div class="w-fit text-center flex flex-col">
+                  <img
+                    class="w-[64px] self-center"
+                    src="/assets/walk/beat-walk.gif"
+                    alt="Sprite of Beat roller skating"
+                  />Beat
+                </div>
+                <div class="w-fit text-center flex flex-col">
+                  <img
+                    class="w-[64px] self-center"
+                    src="/assets/walk/red-walk.gif"
+                    alt="Sprite of Red skateboarding"
+                  />Red
+                </div>
+                <div class="w-fit text-center flex flex-col">
+                  <img
+                    class="w-[64px] self-center"
+                    src="/assets/walk/maxwell-walk.gif"
+                    alt="Sprite of Maxwell walking"
+                  />Maxwell
+                </div>
+              </div>
+              <h1>SHOWS/FILMS</h1>
+              <div class="roster-category">
+                <div class="roster-subcategory">
+                  <div class="w-fit text-center flex flex-col self-end">
+                    <img
+                      class="w-[64px] self-center"
+                      src="/assets/walk/shrike-walk.gif"
+                      alt="Sprite of Shrike walking"
+                    />Shrike
+                  </div>
+                  <div class="w-fit text-center flex flex-col self-end">
+                    <img
+                      class="w-[64px] self-center"
+                      src="/assets/walk/beebs-walk.gif"
+                      alt="Sprite of Beebs walking"
+                    />Beebs
+                  </div>
+                </div>
+                <div class="roster-subcategory">
+                  <div class="w-fit text-center flex flex-col">
+                    <img
+                      class="w-[64px] self-center"
+                      src="/assets/walk/lars-walk.gif"
+                      alt="Sprite of Lars walking"
+                    />Lars
+                  </div>
+                </div>
+                <div class="roster-subcategory">
+                  <div class="w-fit text-center flex flex-col">
+                    <img
+                      class="w-[64px] self-center"
+                      src="/assets/walk/scottwoz-walk.gif"
+                      alt="Sprite of Scott The Woz walking"
+                    />Scott<br />
+                    The Woz
+                  </div>
+                  <div class="w-fit text-center flex flex-col">
+                    <img
+                      class="w-[64px] self-center cursor-pointer"
+                      src="/assets/walk/boxassassin-walk1.gif"
+                      alt="Sprite of Mr. Box walking"
+                      id="boxassassin"
+                    />Mr. Box
+                  </div>
+                </div>
+                <div class="roster-subcategory">
+                  <p>Godspeed</p>
+                  <p>Lackadaisy</p>
+                  <p>Catching Up</p>
+                  <p>
+                    The Amazing<br />
+                    Digital Circus
+                  </p>
+                  <p>
+                    Punch Punch<br />
+                    Forever
+                  </p>
+                  <p>Ramshackle</p>
+                  <p>
+                    The Fruitless<br />
+                    Quests Of Nabiu
+                  </p>
+                  <p>Port By The Sea</p>
+                </div>
+              </div>
+              <div class="h-screen"></div>
+              <p>Curtain Call music from Starmen.net</p>
+              <p>Lasseter sprite by LasseterDubbed</p>
+              <p>Original Opra Zebb sprite by Opra Zebb</p>
+              <div class="h-screen"></div>
+              <script>
+                document
+                  .getElementById("ashie")
+                  .addEventListener("click", (e) => {
+                    switch (e.target.src.replace(window.location.origin, "")) {
+                      case "/assets/walk/ashie-walk1.gif":
+                        e.target.src = "/assets/walk/ashie-walk2.gif";
+                        break;
+                      case "/assets/walk/ashie-walk2.gif":
+                        e.target.src = "/assets/walk/ashie-walk1.gif";
+                        break;
+                    }
+                  });
+                document
+                  .getElementById("nugget")
+                  .addEventListener("click", (e) => {
+                    switch (e.target.src.replace(window.location.origin, "")) {
+                      case "/assets/walk/nugget-walk1.gif":
+                        e.target.src = "/assets/walk/nugget-walk2.gif";
+                        break;
+                      case "/assets/walk/nugget-walk2.gif":
+                        e.target.src = "/assets/walk/nugget-walk1.gif";
+                        break;
+                    }
+                  });
+                document
+                  .getElementById("pablo")
+                  .addEventListener("click", (e) => {
+                    switch (e.target.src.replace(window.location.origin, "")) {
+                      case "/assets/walk/pablo-walk1.gif":
+                        e.target.src = "/assets/walk/pablo-walk2.gif";
+                        break;
+                      case "/assets/walk/pablo-walk2.gif":
+                        e.target.src = "/assets/walk/pablo-walk1.gif";
+                        break;
+                    }
+                  });
+                document
+                  .getElementById("jetainga")
+                  .addEventListener("click", (e) => {
+                    switch (e.target.src.replace(window.location.origin, "")) {
+                      case "/assets/walk/jetainga-walk1.gif":
+                        e.target.src = "/assets/walk/jetainga-walk2.gif";
+                        break;
+                      case "/assets/walk/jetainga-walk2.gif":
+                        e.target.src = "/assets/walk/jetainga-walk1.gif";
+                        break;
+                    }
+                  });
+                document
+                  .getElementById("boxassassin")
+                  .addEventListener("click", (e) => {
+                    switch (e.target.src.replace(window.location.origin, "")) {
+                      case "/assets/walk/boxassassin-walk1.gif":
+                        e.target.src = "/assets/walk/boxassassin-walk2.gif";
+                        break;
+                      case "/assets/walk/boxassassin-walk2.gif":
+                        e.target.src = "/assets/walk/boxassassin-walk1.gif";
+                        break;
+                    }
+                  });
+              </script>
+            </div>
+          </div>
+
+          <div
+            class="bg-neutral-800 text-white font-bold italic pt-4 text-center mt-auto w-full cursor-default"
+            style="
+              text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+                2px 2px 0 #000;
+            "
+          >
+            GAME RACC <span class="text-xs not-italic">ADVANCE</span>
+          </div>
         </div>
-        <div class="w-fit text-center flex flex-col">
-          <img
-            class="w-[64px] self-center cursor-pointer"
-            src="/assets/walk/ashie-walk2.gif"
-            alt="Sprite of Ashie walking"
-            id="ashie"
-          />
-          Ashie
-        </div>
+
+        <aside class="flex flex-col min-w-32 justify-end items-center">
+          <div
+            class="flex w-full justify-center gap-2 font-semibold items-center mb-auto"
+          >
+            <div class="bg-lime-400 w-3 h-3 rounded-full"></div>
+            <span class="cursor-default">POWER</span>
+          </div>
+
+          <div
+            class="flex w-full justify-center gap-2 font-semibold items-center mb-auto"
+          >
+            <button
+              class="bg-slate-200 text-slate-400 hover:bg-slate-400 hover:text-slate-500 p-1 text-end -rotate-12 mx-2 rounded-lg border-b-4 border-black hover:mt-[4px] hover:border-0"
+              id="musicBtn"
+            >
+              Mute
+            </button>
+          </div>
+
+          <div class="flex gap-2 text-3xl">
+            <div
+              class="pl-2 pt-2 bg-slate-200 text-slate-400 button-depth rounded-full w-12 h-12 cursor-default font-semibold mt-4"
+            >
+              B
+            </div>
+            <div
+              class="pl-2 pt-2 bg-slate-200 text-slate-400 button-depth rounded-full w-12 h-12 cursor-default font-semibold"
+            >
+              A
+            </div>
+          </div>
+          <div
+            class="font-semibold mt-6 flex flex-col gap-2 items-end mr-4 cursor-default pb-4"
+          >
+            <div class="bg-black rounded-xl h-1 w-20 -rotate-12"></div>
+            <div class="bg-black rounded-xl h-1 w-20 -rotate-12"></div>
+            <div class="bg-black rounded-xl h-1 w-20 -rotate-12"></div>
+            <div class="bg-black rounded-xl h-1 w-20 -rotate-12"></div>
+            <div class="bg-black rounded-xl h-1 w-20 -rotate-12"></div>
+          </div>
+        </aside>
       </div>
-      <div class="roster-subcategory">
-        <div class="w-fit text-center flex flex-col">
-          <img
-            class="w-[64px] self-center cursor-pointer"
-            src="/assets/walk/nugget-walk1.gif"
-            alt="Sprite of Nugget walking"
-            id="nugget"
-          />
-          Nugget
-        </div>
-        <div class="w-fit text-center flex flex-col">
-          <img
-            class="w-[64px] self-center"
-            src="/assets/walk/lasseter-walk.gif"
-            alt="Sprite of Lasseter walking"
-          />
-          Lasseter
-        </div>
+
+      <div class="h-16">
+        <p class="text-center cursor-default">v0.6</p>
       </div>
     </div>
-    <h1>ARTISTS</h1>
-    <div class="roster-category">
-      <div class="roster-subcategory">
-        <div class="w-fit text-center flex flex-col">
-          <img
-            class="w-[64px] self-center cursor-pointer"
-            src="/assets/walk/jetainga-walk2.gif"
-            alt="Sprite of Jetainga walking"
-            id="jetainga"
-          />
-          Jetainga
-        </div>
-      </div>
-      <div class="roster-subcategory">Kevin Fagaragan</div>
-    </div>
-    <h1>STREAMERS</h1>
-    <div class="roster-category">
-      <div class="w-fit text-center flex flex-col">
-        <img
-          class="w-[64px] self-center"
-          src="/assets/walk/oprazebb-walk.gif"
-          alt="Sprite of Opra Zebb walking"
-        />Opra Zebb
-      </div>
-    </div>
-    <h1>GAMES</h1>
-    <div class="roster-category">
-      <div class="roster-subcategory">
-        <div class="w-fit text-center flex flex-col">
-          <img
-            class="w-[64px] self-center"
-            src="/assets/walk/poppin-walk.gif"
-            alt="Sprite of Poppin walking"
-          />
-          Poppin
-        </div>
-        <div class="w-fit text-center flex flex-col">
-          <img
-            class="w-[64px] self-center"
-            src="/assets/walk/jupa-walk.gif"
-            alt="Sprite of Jupa walking"
-          />
-          Jupa
-        </div>
-      </div>
-      <div class="roster-subcategory">
-        <div class="w-fit text-center flex flex-col cursor-pointer">
-          <img
-            class="w-[64px] self-center"
-            src="/assets/walk/pablo-walk2.gif"
-            alt="Sprite of Pablo walking"
-            id="pablo"
-          />
-          Pablo
-        </div>
-        <div class="w-fit text-center flex flex-col">
-          <img
-            class="w-[64px] self-center"
-            src="/assets/walk/luna-walk.gif"
-            alt="Sprite of Luna walking"
-          />
-          Luna
-        </div>
-      </div>
-      <div class="w-fit text-center flex flex-col">
-        <img
-          class="w-[64px] self-center"
-          src="/assets/walk/kinoko-walk.gif"
-          alt="Sprite of Kinoko walking"
-        />
-        Kinoko
-      </div>
-      <div class="w-fit text-center flex flex-col">
-        <img
-          class="w-[64px] self-center"
-          src="/assets/walk/beat-walk.gif"
-          alt="Sprite of Beat roller skating"
-        />Beat
-      </div>
-      <div class="w-fit text-center flex flex-col">
-        <img
-          class="w-[64px] self-center"
-          src="/assets/walk/red-walk.gif"
-          alt="Sprite of Red skateboarding"
-        />Red
-      </div>
-      <div class="w-fit text-center flex flex-col">
-        <img
-          class="w-[64px] self-center"
-          src="/assets/walk/maxwell-walk.gif"
-          alt="Sprite of Maxwell walking"
-        />Maxwell
-      </div>
-    </div>
-    <h1>SHOWS/FILMS</h1>
-    <div class="roster-category">
-      <div class="roster-subcategory">
-        <div class="w-fit text-center flex flex-col self-end">
-          <img
-            class="w-[64px] self-center"
-            src="/assets/walk/shrike-walk.gif"
-            alt="Sprite of Shrike walking"
-          />Shrike
-        </div>
-        <div class="w-fit text-center flex flex-col self-end">
-          <img
-            class="w-[64px] self-center"
-            src="/assets/walk/beebs-walk.gif"
-            alt="Sprite of Beebs walking"
-          />Beebs
-        </div>
-      </div>
-      <div class="roster-subcategory">
-        <div class="w-fit text-center flex flex-col">
-          <img
-            class="w-[64px] self-center"
-            src="/assets/walk/lars-walk.gif"
-            alt="Sprite of Lars walking"
-          />Lars
-        </div>
-      </div>
-      <div class="roster-subcategory">
-        <div class="w-fit text-center flex flex-col">
-          <img
-            class="w-[64px] self-center"
-            src="/assets/walk/scottwoz-walk.gif"
-            alt="Sprite of Scott The Woz walking"
-          />Scott<br />
-          The Woz
-        </div>
-        <div class="w-fit text-center flex flex-col">
-          <img
-            class="w-[64px] self-center cursor-pointer"
-            src="/assets/walk/boxassassin-walk1.gif"
-            alt="Sprite of Mr. Box walking"
-            id="boxassassin"
-          />Mr. Box
-        </div>
-      </div>
-      <div class="roster-subcategory">
-        <p>Godspeed</p>
-        <p>Lackadaisy</p>
-        <p>Catching Up</p>
-        <p>
-          The Amazing<br />
-          Digital Circus
-        </p>
-        <p>
-          Punch Punch<br />
-          Forever
-        </p>
-        <p>Ramshackle</p>
-        <p>
-          The Fruitless<br />
-          Quests Of Nabiu
-        </p>
-        <p>Port By The Sea</p>
-      </div>
-    </div>
-    <div class="h-screen"></div>
-    <p>Curtain Call music from Starmen.net</p>
-    <p>Lasseter sprite by LasseterDubbed</p>
-    <p>Original Opra Zebb sprite by Opra Zebb</p>
-    <div class="h-screen"></div>
+    <script type="module" src="/scripts/footer.js"></script>
+    <script type="module" src="/scripts/app.js"></script>
     <script>
-      document.getElementById("ashie").addEventListener("click", (e) => {
-        switch (e.target.src.replace(window.location.origin, "")) {
-          case "/assets/walk/ashie-walk1.gif":
-            e.target.src = "/assets/walk/ashie-walk2.gif";
-            break;
-          case "/assets/walk/ashie-walk2.gif":
-            e.target.src = "/assets/walk/ashie-walk1.gif";
-            break;
+      let musicBtn = document.getElementById("musicBtn");
+      let musicMute = false;
+
+      const muteFunc = () => {
+        let iframeElem = document.getElementById("iframeElemId");
+        let innerDoc =
+          iframeElem.contentDocument || iframeElem.contentWindow.document;
+        let mediaSource = innerDoc.getElementById("music");
+        if (musicMute == true) {
+          mediaSource.muted = true;
+        } else {
+          mediaSource.muted = false;
         }
-      });
-      document.getElementById("nugget").addEventListener("click", (e) => {
-        switch (e.target.src.replace(window.location.origin, "")) {
-          case "/assets/walk/nugget-walk1.gif":
-            e.target.src = "/assets/walk/nugget-walk2.gif";
-            break;
-          case "/assets/walk/nugget-walk2.gif":
-            e.target.src = "/assets/walk/nugget-walk1.gif";
-            break;
+      };
+
+      musicBtn.addEventListener("click", (e) => {
+        if (musicMute == false) {
+          musicMute = true;
+          musicBtn.className =
+            "bg-slate-200 text-slate-400 hover:bg-slate-400 hover:text-slate-500 p-1 text-end -rotate-12 mx-2 rounded-lg border-b-2 border-black hover:mt-[4px] hover:border-0";
+        } else {
+          musicMute = false;
+          musicBtn.className =
+            "bg-slate-200 text-slate-400 hover:bg-slate-400 hover:text-slate-500 p-1 text-end -rotate-12 mx-2 rounded-lg border-b-4 border-black hover:mt-[4px] hover:border-0";
         }
-      });
-      document.getElementById("pablo").addEventListener("click", (e) => {
-        switch (e.target.src.replace(window.location.origin, "")) {
-          case "/assets/walk/pablo-walk1.gif":
-            e.target.src = "/assets/walk/pablo-walk2.gif";
-            break;
-          case "/assets/walk/pablo-walk2.gif":
-            e.target.src = "/assets/walk/pablo-walk1.gif";
-            break;
-        }
-      });
-      document.getElementById("jetainga").addEventListener("click", (e) => {
-        switch (e.target.src.replace(window.location.origin, "")) {
-          case "/assets/walk/jetainga-walk1.gif":
-            e.target.src = "/assets/walk/jetainga-walk2.gif";
-            break;
-          case "/assets/walk/jetainga-walk2.gif":
-            e.target.src = "/assets/walk/jetainga-walk1.gif";
-            break;
-        }
-      });
-      document.getElementById("boxassassin").addEventListener("click", (e) => {
-        switch (e.target.src.replace(window.location.origin, "")) {
-          case "/assets/walk/boxassassin-walk1.gif":
-            e.target.src = "/assets/walk/boxassassin-walk2.gif";
-            break;
-          case "/assets/walk/boxassassin-walk2.gif":
-            e.target.src = "/assets/walk/boxassassin-walk1.gif";
-            break;
-        }
+
+        muteFunc();
       });
     </script>
   </body>
